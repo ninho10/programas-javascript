@@ -1,0 +1,31 @@
+<html>
+  <body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </body>
+  <script>
+    var elementos = document.getElementsByClassName("box");
+
+    for (var i = 0; i < elementos.length; i++) {
+      var el = elementos[i];
+      el.style.width = 900;
+      el.style.height = 100;
+      el.style.marginLeft = 10;
+      if (i == 0) {
+        cor = "black";
+      } else if (i == 2) {
+        cor = "black";
+      } else if (i == 4) {
+        cor = "black";
+      } else {
+        cor = "red";
+      }
+
+      el.style.backgroundColor = cor;
+    }
+  </script>
+</html>
